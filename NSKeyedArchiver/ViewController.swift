@@ -78,7 +78,13 @@ class ViewController: UIViewController {
         operationQueue2.addOperation(operation12)
         operationQueue2.addOperation(operation22)
         
+        //Till now usage was through operation block.
         
+        
+        //Direct Usage
+        DispatchQueue.global(qos:.background).async {
+            
+        }
         
         
         /*DispatchQueue.global(qos: .utility).async { [unowned self] in
@@ -155,5 +161,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    
 }
 
